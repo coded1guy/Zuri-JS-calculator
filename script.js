@@ -24,9 +24,9 @@ const validateOperand = (num1, op, num2) => {
 }
 const start = () => {
     alert("This is a JavaScript basic Calculator");
-    num1 = prompt("Input the first number");
+    num1 = parseInt(prompt("Input the first number"));
     operator = prompt("Input the basic operator(it should be one of these): +, -, *, /, %");
-    num2 = prompt("Input the second number");
+    num2 = parseInt(prompt("Input the second number"));
     console.log(num1, operator, num2);
     if(typeof num1 == 'number' && typeof num2 == 'number') {
         console.log("pass1");
